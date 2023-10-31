@@ -1,0 +1,51 @@
+﻿<TabView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+         xmlns:local="clr-namespace:GIWA"
+         x:Class="GIWA.MainPage">
+
+	<!-- Home Tab -->
+	<TabViewItem>
+		<TabViewItem.Icon>
+			<FontIcon Glyph="&#xE10F;" />
+			<!-- Exempelikon, ändra som du vill -->
+		</TabViewItem.Icon>
+		<TabViewItem.Content>
+			<NavigationPage>
+				<x:Arguments>
+					<local:HomePage />
+				</x:Arguments>
+			</NavigationPage>
+		</TabViewItem.Content>
+	</TabViewItem>
+
+	<!-- Products Tab -->
+	<TabViewItem>
+		<TabViewItem.Icon>
+			<FontIcon Glyph="&#xE735;" />
+			<!-- Exempelikon, ändra som du vill -->
+		</TabViewItem.Icon>
+		<TabViewItem.Content>
+			<NavigationPage>
+				<x:Arguments>
+					<local:ProductsPage />
+				</x:Arguments>
+			</NavigationPage>
+		</TabViewItem.Content>
+	</TabViewItem>
+
+	<!-- Stats Tab -->
+	<TabViewItem>
+		<TabViewItem.Icon>
+			<FontIcon Glyph="&#xE133;" />
+			<!-- Exempelikon, ändra som du vill -->
+		</TabViewItem.Icon>
+		<TabViewItem.Content>
+			<NavigationPage>
+				<x:Arguments>
+					<local:StatsPage />
+				</x:Arguments>
+			</NavigationPage>
+		</TabViewItem.Content>
+	</TabViewItem>
+
+</TabView>

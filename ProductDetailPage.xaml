@@ -1,0 +1,22 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GIWA.ProductDetailPage">
+
+    <ScrollView>
+        <StackLayout Padding="20">
+
+            <!-- Produktbild -->
+            <Image x:Name="ProductImage" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" />
+
+            <!-- Produktnamn -->
+            <Label x:Name="ProductNameLabel" FontSize="24" HorizontalOptions="Center" Margin="0,10" />
+
+            <!-- Produktbeskrivning -->
+            <Label x:Name="ProductDescriptionLabel" FontSize="16" Margin="0,10" />
+
+            <!-- Låsknapp (om produkten kan låsas) -->
+            <Button x:Name="LockButton" Text="Lås produkt" Clicked="OnLockButtonClicked" HorizontalOptions="Center" />
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

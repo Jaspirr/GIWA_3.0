@@ -1,0 +1,33 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GIWA.ProductsPage">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+        <!-- Första raden med 1 produkt -->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <!-- Produktkort -->
+            <Frame WidthRequest="100" HeightRequest="100" Rotation="45" Padding="0" BackgroundColor="Transparent">
+                <Image Source="path_to_your_product_image1.jpg" Aspect="AspectFill">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnProductTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <!-- Lägg till en låsbild här om produkten är låst -->
+                <Image Source="path_to_lock_icon.png" IsVisible="False" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </Frame>
+        </StackLayout>
+        
+        <!-- Andra raden med 2 produkter -->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
+            <!-- Produktkort -->
+            <!-- ... (upprepa produktkortskoden här två gånger) -->
+        </StackLayout>
+        
+        <!-- Tredje raden med 3 produkter -->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
+            <!-- Produktkort -->
+            <!-- ... (upprepa produktkortskoden här tre gånger) -->
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
